@@ -1,0 +1,19 @@
+<HTML>
+<HEAD>
+    <meta charset="utf-8">
+    <! -- кодировка с англ на русский -- !>
+    <TITLE> Zagolovok of this page </TITLE>
+</HEAD>
+<BODY>
+{%extends "base.html" %}
+{%block page_content%}
+<form action="{% url 'addtext'%}">
+    <textarea cols='50' , rows='10' , name='usertext'></textarea>
+    <input type='submit' value="Тыкай">
+</form>
+{% endblock %}
+</BODY>
+</HTML>
+
+
+
